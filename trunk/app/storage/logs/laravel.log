@@ -1,0 +1,28 @@
+[2014-02-19 21:25:02] production.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "migrations" namespace.' in C:\xampp\htdocs\elprofeweb\vendor\symfony\console\Symfony\Component\Console\Application.php:514
+Stack trace:
+#0 C:\xampp\htdocs\elprofeweb\vendor\symfony\console\Symfony\Component\Console\Application.php(548): Symfony\Component\Console\Application->findNamespace('migrations')
+#1 C:\xampp\htdocs\elprofeweb\vendor\symfony\console\Symfony\Component\Console\Application.php(188): Symfony\Component\Console\Application->find('migrations:make')
+#2 C:\xampp\htdocs\elprofeweb\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\xampp\htdocs\elprofeweb\artisan(59): Symfony\Component\Console\Application->run()
+#4 {main} [] []
+[2014-02-19 21:35:06] production.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'database'' in C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(59): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(47): Illuminate\Database\Connectors\ConnectionFactory->createSingleConnection(Array)
+#4 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(127): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#5 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(63): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#6 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(167): Illuminate\Database\DatabaseManager->connection(NULL)
+#7 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(135): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#8 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(366): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#9 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(93): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#10 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(56): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#11 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#12 C:\xampp\htdocs\elprofeweb\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(241): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\xampp\htdocs\elprofeweb\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\xampp\htdocs\elprofeweb\vendor\symfony\console\Symfony\Component\Console\Application.php(892): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\xampp\htdocs\elprofeweb\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\xampp\htdocs\elprofeweb\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\xampp\htdocs\elprofeweb\artisan(59): Symfony\Component\Console\Application->run()
+#18 {main} [] []
