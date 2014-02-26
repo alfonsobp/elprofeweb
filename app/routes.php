@@ -13,5 +13,20 @@
 
 Route::get('/', function()
 {
+	return View::make('page');
+});
+
+Route::get('inicio', function()
+{
+	return View::make('page');
+});
+
+Route::get('page2', function()
+{
+	return View::make('page2');
+});
+
+Route::get('welcome', function()
+{
 	return View::make('hello');
 });
