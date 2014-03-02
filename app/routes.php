@@ -11,22 +11,8 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('page');
-});
-
-Route::get('inicio', function()
-{
-	return View::make('page');
-});
-
-Route::get('page2', function()
-{
-	return View::make('page2');
-});
-
-Route::get('welcome', function()
-{
-	return View::make('hello');
-});
+Route::get('bienvenido', 'Welcome@index');
+Route::get('informacion', 'Information@index');
+Route::get('categorias', 'Categories@index');
+Route::get('asignaturas', 'Subjects@index');
+Route::get('filtros', 'Filters@index');

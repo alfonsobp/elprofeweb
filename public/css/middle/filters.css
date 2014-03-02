@@ -1,0 +1,7 @@
+#nav_right, #nav_bottom{
+	display: none;
+}
+
+#nav_top, #nav_left{
+	display: block;
+}
