@@ -15,7 +15,7 @@ class CreateSubjects extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('category_id')->unsigned();
-			$table->foreign('category_id')->references('id')->on('categorys')->onDelete('cascade');
+			$table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
 			$table->string('name',100);
 			$table->timestamps();
 		});
