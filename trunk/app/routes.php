@@ -11,10 +11,27 @@
 |
 */
 
+Route::get('/', function()
+{
+	return View::make('hello');
+});
+
+// Route::resource('adverts', 'AdvertsController');
+Route::get('anuncia', 'AdvertsController@index');
+Route::get('crear', 'AdvertsController@create');
+Route::post('crear', 'AdvertsController@store');
+Route::post('editar', 'AdvertsController@edit');
+Route::post('mostrar', 'AdvertsController@show');
+Route::post('eliminar', 'AdvertsController@destroy');
+Route::get('/asignaturas/{first}','SubjectController@getSubjects');
+
+
+
 Route::get('bienvenido', 'Welcome@index');
 Route::get('informacion', 'Information@index');
 Route::get('categorias', 'Categories@index');
 Route::get('asignaturas', 'Subjects@index');
+Route::get('filtros', 'Filters@index');
 Route::get('filtros', 'Filters@index');
 
 /*Registro de usuarios*/
