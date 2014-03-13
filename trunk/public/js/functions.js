@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
   			var cod_dept = $('#localization_dept').val() ;
 			$.ajax({
 
-				url: "/provincias/"+cod_dept,
+				url: base_url+"/provincias/"+cod_dept,
 				type: "GET",
 				datatype: 'json',
 				success: function(data) {
@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
   			var cod_prov = $('#localization_prov').val() ;
 			$.ajax({
 
-				url: "/distritos/"+cod_dept+"/"+cod_prov,
+				url: base_url+"/distritos/"+cod_dept+"/"+cod_prov,
 				type: "GET",
 				datatype: 'json',
 				success: function(data) {
