@@ -25,6 +25,8 @@ class PersonController extends BaseController {
 			$person->doc_number = $input['doc_number'];
 			$person->doc_type = $input['doc_type'];
 			$person->email=$input['email'];
+			$person->career=$input['career'];
+			$person->state=1;
 
 		//para transformar a fecha
 			$borndate = date("Y-m-d", strtotime($input['born_date']));
